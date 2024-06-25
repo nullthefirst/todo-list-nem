@@ -1,7 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const connectDB = require('../config/db');
 
+// Connect app to MongoDB
+connectDB();
 const app = express();
 
 // Middleware
